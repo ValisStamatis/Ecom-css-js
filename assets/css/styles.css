@@ -131,6 +131,7 @@ img {
 
 .row {
     display: flex;
+    gap: 2rem;
 }
 
 /* HEADER TOP */
@@ -658,7 +659,6 @@ img {
 }
 
 .promotion__container {
-    padding: 0rem 0rem 0rem 2rem;
     width: 100%;
 }
 
