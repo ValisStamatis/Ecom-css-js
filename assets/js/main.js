@@ -48,14 +48,18 @@ $(document).ready(function () {
   });
   $("#nav-toggle").click(function () {
     $(".nav__menu").addClass("mobile-show-menu");
+    $(".shadow").addClass("active-shadow");
   });
   $("#nav-close").click(function () {
     $(".nav__menu").removeClass("mobile-show-menu");
+    $(".shadow").removeClass("active-shadow");
   });
   $("#nav-category-toggle").click(function () {
     $(".nav__category-menu").addClass("mobile-show-menu");
+    $(".shadow").addClass("active-shadow");
   });
   $("#nav-category-close").click(function () {
     $(".nav__category-menu").removeClass("mobile-show-menu");
+    $(".shadow").removeClass("active-shadow");
   });
 });
