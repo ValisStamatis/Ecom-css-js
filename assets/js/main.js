@@ -9,12 +9,20 @@ $(document).ready(function () {
   });
   const swiper2 = new Swiper('.swiper2', {
     // Default parameters
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 40,
     freeMode: {
       enabled: true,
       sticky: true,
     },
+    breakpoints: {
+      // when window width is >= 320px
+      990: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      
+      }
+    }
   });
   const swiper3 = new Swiper('.swiper3', {
     // Default parameters
