@@ -950,6 +950,7 @@ border-radius: 10px;
 }
 /* ARTICLES */
 .articles{
+    overflow: hidden;
     margin: 3rem 0 3rem 0;
 }
 .articles__container{
@@ -994,6 +995,7 @@ border-radius: 10px;
     display: flex;
     gap: 2rem;
     margin-left: 1rem;
+    align-items: center;
 }
 .brand__item{
     display: flex;
@@ -1163,6 +1165,7 @@ border-radius: 10px;
         flex-wrap: wrap;
         row-gap: 0.1rem;
         column-gap: 2rem;
+        align-items: center;
     }
 
 
