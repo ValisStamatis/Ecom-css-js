@@ -266,7 +266,8 @@ img {
 }
 
 /* NAV */
-.nav__menu {
+.nav__menu,
+.nav__category-menu {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -1147,7 +1148,8 @@ img {
     font-size: 1.5rem;
 }
 
-.nav__menu {
+.nav__menu,
+.nav__category-menu {
     display: none;
     position: fixed;
     top: 0;
@@ -1159,26 +1161,32 @@ img {
     padding: 1rem;
     min-width: 60%;
 }
-.nav__menu .panel{
- border-bottom: 1px solid var(--super-light-gray);
+
+.nav__menu .panel {
+    border-bottom: 1px solid var(--super-light-gray);
 }
-.nav__menu .accordion{
+
+.nav__menu .accordion {
     margin-top: 0.7rem;
     font-size: 1rem;
     color: hsl(0deg 0% 27%);
 }
-.nav__menu .category__list-item{
+
+.nav__menu .category__list-item {
     margin-bottom: 0.5rem;
 }
+
 .nav__top {
     display: grid;
     grid-template-columns: 3fr 1fr;
     border-bottom: 1px solid var(--super-light-gray);
     padding-bottom: 1rem;
 }
-.nav__top-title h3{
+
+.nav__top-title h3 {
     color: var(--pink);
 }
+
 .nav__close {
     display: flex;
     align-items: center;
@@ -1187,32 +1195,38 @@ img {
 .mobile__preferences {
     margin: 3rem 0 3rem 0;
 }
-.mobile__preferences .category__list{
+
+.mobile__preferences .category__list {
     border: 1px solid var(--super-light-gray);
     border-radius: 10px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     margin: 0.5rem 0;
 }
-.mobile__preferences .category__list-item{
+
+.mobile__preferences .category__list-item {
     border-bottom: 1px solid var(--super-light-gray);
 }
-.mobile__preferences .panel{
+
+.mobile__preferences .panel {
     border: 0;
 }
+
 .mobile__socials {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.socials__item i{
+
+.socials__item i {
     font-size: 2rem;
 }
-.mobile-show-menu{
+
+.mobile-show-menu {
     display: block;
 }
 
-/* MEDIA QUERIES */ 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .header {
         padding-left: 2rem;
@@ -1252,6 +1266,25 @@ img {
         border-bottom: 0;
         margin-bottom: 0;
         transition: 1s;
+    }
+
+    .sidebar__category {
+        border: 0;
+        border-radius: 0;
+        padding: 1rem;
+        border-bottom: 1px solid var(--super-light-gray);
+    }
+
+    .sidebar__title {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .sidebar__title i {
+        font-size: 1.5rem;
+    }
+    .nav__category-menu .accordion{
+        padding: 0.5rem 0 0.5rem 0;
     }
 }
 

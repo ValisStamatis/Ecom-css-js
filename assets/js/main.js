@@ -52,4 +52,10 @@ $(document).ready(function () {
   $("#nav-close").click(function () {
     $(".nav__menu").removeClass("mobile-show-menu");
   });
+  $("#nav-category-toggle").click(function () {
+    $(".nav__category-menu").addClass("mobile-show-menu");
+  });
+  $("#nav-category-close").click(function () {
+    $(".nav__category-menu").removeClass("mobile-show-menu");
+  });
 });
