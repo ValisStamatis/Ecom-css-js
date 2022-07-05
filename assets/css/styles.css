@@ -1157,7 +1157,7 @@ border-radius: 10px;
         margin-bottom: 4rem;
     }
     .brand__item {
-        align-items: baseline;
+        flex-wrap: wrap;
     }
     .brand__list {
         flex-wrap: wrap;
@@ -1170,7 +1170,7 @@ border-radius: 10px;
         margin-bottom: 3rem;
     }
 
-    
+
     .footermid__container {
         grid-template-columns: 1fr;
     }
