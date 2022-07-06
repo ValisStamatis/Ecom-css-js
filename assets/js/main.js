@@ -71,4 +71,13 @@ $(document).ready(function () {
     $(".newsletter__popup").addClass("popup-hide");
     $(".shadow").removeClass("active-shadow");
   });
+  setTimeout(function () {
+    $(".bought__popup").removeClass("popup-hide");
+  }, 3000);
+  setTimeout(function () {
+    $(".bought__popup").addClass("popup-hide");
+  }, 7000);
+  $(".bought__close").click(function () {
+    $(".bought__popup").addClass("popup-hide");
+  });
 });
