@@ -1290,6 +1290,9 @@ img {
     border-radius: 4px;
     padding: 4px;
 }
+.popup__close i:hover{
+    background-color: rgb(250, 156, 167);
+}
 .popup__title h3{
     color: hsl(0deg 0% 13%);
     font-size: 1.25rem;
