@@ -1425,6 +1425,7 @@ img {
 
     .newsletter__popup {
         margin: auto 2rem;
+        justify-content: center;
     }
 
     .popup__image {
