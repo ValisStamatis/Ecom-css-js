@@ -44,7 +44,7 @@ $(document).ready(function () {
   }
 
   $("#nav-toggle").click(function () {
-    console.log("clicked")
+    console.log("clicked");
   });
   $("#nav-toggle").click(function () {
     $(".nav__menu").addClass("mobile-show-menu");
@@ -60,6 +60,15 @@ $(document).ready(function () {
   });
   $("#nav-category-close").click(function () {
     $(".nav__category-menu").removeClass("mobile-show-menu");
+    $(".shadow").removeClass("active-shadow");
+  });
+  /* newsletter popup */
+  setTimeout(function () {
+    $(".newsletter__popup").removeClass("popup-hide");
+    $(".shadow").addClass("active-shadow");
+  }, 2000);
+  $(".popup__close").click(function () {
+    $(".newsletter__popup").addClass("popup-hide");
     $(".shadow").removeClass("active-shadow");
   });
 });

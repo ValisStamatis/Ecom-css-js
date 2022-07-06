@@ -97,7 +97,9 @@ input {
     border: none;
     outline: none;
 }
-
+input::placeholder{
+    font-family: var(--body-font);
+}
 button {
     cursor: pointer;
 }
@@ -1224,8 +1226,10 @@ img {
 
 .mobile-show-menu {
     display: block;
+    transition: 1s;
 }
-.shadow{
+
+.shadow {
     position: fixed;
     z-index: 10;
     height: 100%;
@@ -1237,6 +1241,108 @@ img {
     right: 0;
     display: none;
 }
+
+/*pop up */
+.newsletter__popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 770px;
+    max-height: 400px;
+    z-index: 11;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+.popup__image {
+    width: 100%;
+    height: 100%;
+}
+
+.popup__image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.popup__info {
+    padding: 0 2rem;
+}
+
+.popup__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.popup__close i {
+    font-size: 1rem;
+    color: white;
+    background-color: var(--pink);
+    border-radius: 4px;
+    padding: 4px;
+}
+.popup__title h3{
+    color: hsl(0deg 0% 13%);
+    font-size: 1.25rem;
+}
+.popup__description {
+    margin: .9rem 0;
+    color: gray;
+}
+.popup__description span{
+    font-weight: var(--font-semi-bold);
+}
+.popup__email {
+    border: 1px solid var(--super-light-gray);
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.popup__email input {
+    padding: .3rem;
+}
+
+.popup__email input::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+.popup__button {
+    text-align: center;
+}
+
+.popup__button a {
+    color: white;
+    background-color: hsl(0deg 0% 13%);
+    border-radius: 7px;
+    padding: 0.7rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.popup__button a:hover {
+    color: white;
+    background-color: var(--pink);
+    transition: 0.5s;
+}
+
+.popup-hide {
+    display: none;
+    transition: 1s;
+}
+.active-shadow {
+    display: block;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .header {
@@ -1295,25 +1401,34 @@ img {
     .nav__close i {
         font-size: 1.5rem;
     }
-    .nav__category-menu .accordion{
+
+    .nav__category-menu .accordion {
         padding: 0.5rem 0 0.5rem 0;
     }
-    .active-shadow{
-        display: block;
-    }
-    .pref-after::after{
+    .pref-after::after {
         content: '<';
     }
-    .no-sub{
+
+    .no-sub {
         border-bottom: 1px solid var(--super-light-gray);
-    padding-bottom: 1rem;
+        padding-bottom: 1rem;
     }
-    .no-sub::after{
-        display: none!important;
-        content: ''!important;
+
+    .no-sub::after {
+        display: none !important;
+        content: '' !important;
     }
-    .social__icon{
+
+    .social__icon {
         border-radius: 11px;
+    }
+
+    .newsletter__popup {
+        margin: auto 2rem;
+    }
+
+    .popup__image {
+        display: none;
     }
 }
 
