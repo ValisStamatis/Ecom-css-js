@@ -1150,7 +1150,7 @@ img {
     font-size: 1.5rem;
 }
 
-.nav__menu,
+.nav__mobile__menu,
 .nav__category-menu {
     display: none;
     position: fixed;
@@ -1164,17 +1164,17 @@ img {
     min-width: 60%;
 }
 
-.nav__menu .panel {
+.nav__mobile__menu .panel {
     border-bottom: 1px solid var(--super-light-gray);
 }
 
-.nav__menu .accordion {
+.nav__mobile__menu .accordion {
     margin: 0.6rem 0;
     font-size: 1rem;
     color: hsl(0deg 0% 27%);
 }
 
-.nav__menu .category__list-item {
+.nav__mobile__menu .category__list-item {
     margin-bottom: 0.5rem;
 }
 
