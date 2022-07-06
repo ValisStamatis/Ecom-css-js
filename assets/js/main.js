@@ -76,7 +76,7 @@ $(document).ready(function () {
   }, 3000);
   setTimeout(function () {
     $(".bought__popup").addClass("popup-hide");
-  }, 7000);
+  }, 30000);
   $(".bought__close").click(function () {
     $(".bought__popup").addClass("popup-hide");
   });
