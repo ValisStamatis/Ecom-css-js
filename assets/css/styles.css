@@ -97,9 +97,11 @@ input {
     border: none;
     outline: none;
 }
-input::placeholder{
+
+input::placeholder {
     font-family: var(--body-font);
 }
+
 button {
     cursor: pointer;
 }
@@ -1257,7 +1259,9 @@ img {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1.5s linear;
 }
 
 .popup__image {
@@ -1290,20 +1294,25 @@ img {
     border-radius: 4px;
     padding: 4px;
 }
-.popup__close i:hover{
+
+.popup__close i:hover {
     background-color: rgb(250, 156, 167);
 }
-.popup__title h3{
+
+.popup__title h3 {
     color: hsl(0deg 0% 13%);
     font-size: 1.25rem;
 }
+
 .popup__description {
     margin: .9rem 0;
     color: gray;
 }
-.popup__description span{
+
+.popup__description span {
     font-weight: var(--font-semi-bold);
 }
+
 .popup__email {
     border: 1px solid var(--super-light-gray);
     border-radius: 7px;
@@ -1341,8 +1350,9 @@ img {
 .active-shadow {
     display: block;
 }
+
 /* BOUGHT POPUP */
-.bought__popup{
+.bought__popup {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
@@ -1355,48 +1365,61 @@ img {
     padding: 1rem;
     background-color: white;
     box-shadow: 0px 0px 26px -13px black;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s linear;
 }
-.bought__image img{
+
+.bought__image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border: 1px solid var(--super-light-gray);
     border-radius: 10px;
 }
-.bought__info  {
+
+.bought__info {
     margin: 0 1rem;
 }
-.bought__description{
+
+.bought__description {
     color: gray;
     font-size: 0.8rem;
 }
-.bought__description p{
+
+.bought__description p {
     margin-bottom: 0.5rem;
     max-width: 17ch;
 }
-.bought__title  h5{
+
+.bought__title h5 {
     font-size: 1rem;
     color: black;
     font-weight: var(--font-semi-bold);
 }
-.bought__time{
+
+.bought__time {
     color: gray;
     font-size: 0.8rem;
 }
-.bought__close{
+
+.bought__close {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
 }
+
 .bought__close i {
     font-size: 1rem;
     color: gray;
 }
 
 .popup-hide {
-    display: none;
-    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
 }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .header {
@@ -1459,6 +1482,7 @@ img {
     .nav__category-menu .accordion {
         padding: 0.5rem 0 0.5rem 0;
     }
+
     .pref-after::after {
         content: '<';
     }
