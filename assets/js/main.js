@@ -47,11 +47,11 @@ $(document).ready(function () {
     console.log("clicked");
   });
   $("#nav-toggle").click(function () {
-    $(".nav__menu").addClass("mobile-show-menu");
+    $(".nav__mobile__menu").addClass("mobile-show-menu");
     $(".shadow").addClass("active-shadow");
   });
   $("#nav-close").click(function () {
-    $(".nav__menu").removeClass("mobile-show-menu");
+    $(".nav__mobile__menu").removeClass("mobile-show-menu");
     $(".shadow").removeClass("active-shadow");
   });
   $("#nav-category-toggle").click(function () {

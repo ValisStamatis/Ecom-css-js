@@ -988,7 +988,6 @@ img {
 .articles__container {
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
 .article__image img {
@@ -1222,9 +1221,7 @@ img {
     gap: 1rem;
 }
 
-.socials__item i {
-    font-size: 2rem;
-}
+
 
 .mobile-show-menu {
     display: block;
@@ -1508,6 +1505,9 @@ img {
 
     .popup__image {
         display: none;
+    }
+    .socials__item i {
+        font-size: 2rem;
     }
 }
 
